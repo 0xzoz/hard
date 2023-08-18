@@ -2,6 +2,7 @@
 ---
 
 # Hard
+<img width="639" alt="Screenshot 2023-08-17 at 10 42 42 PM" src="https://github.com/0xzoz/hard/assets/97761083/7d294d6c-dfd1-4829-83c1-1ed285b448d4">
 
 ### Overview
 
@@ -17,7 +18,7 @@ HARD draws its ingenious spirit from a melange of brilliant minds and their visi
   
 - And, the audacious game, [Last Degen Standing](https://github.com/defijesus/last-degen-standing), masterminded by **[DefiJesus](https://farcaster.com/defijesus)**, further fueled our imagination. Listen to his captivating [cast](https://warpcast.com/defijesus/0x4523d9) for a deep dive.
 
-These trailblazers not only paved the way but also kindled the fire of innovation, leading to the inception of HardNFTGame. To them, we tip our hats in gratitude and admiration.
+These trailblazers not only paved the way but also kindled the fire of innovation, leading to the inception of HARD. To them, we tip our hats in gratitude and admiration.
 
 
 ### Core Concepts
@@ -26,7 +27,7 @@ These trailblazers not only paved the way but also kindled the fire of innovatio
 
 2. **Signature Collection**: Owning a HARD opens the gateway to seek signatures from other HARD holders. Each unique signature not only amplifies the HARD's value but also strengthens the player's position in the game.
 
-3. **Grit Points**: Being on the signing end of a HARD fetches you Grit points. These points mirror a player's contribution and engagement in the HardNFTGame ecosystem.
+3. **Grit Points**: Being on the signing end of a HARD fetches you Grit points. These points mirror a player's contribution and engagement in the HARD ecosystem.
 
 4. **Burn with Precision**: Grit burning introduces a strategic twist. Only players who've signed a specific HARD can burn their Grit points, making every decision in the game consequential.
 
@@ -45,11 +46,11 @@ These trailblazers not only paved the way but also kindled the fire of innovatio
 
 ### The "Grit" Philosophy
 
-In HardNFTGame, "Grit" is more than a point system. It symbolizes perseverance, dedication, and the relentless pursuit of long-term goals. Every Grit point you earn is a badge of your resilience and active participation.
+In HARD, "Grit" is more than a point system. It symbolizes perseverance, dedication, and the relentless pursuit of long-term goals. Every Grit point you earn is a badge of your resilience and active participation.
 
 ### Looking Ahead
 
-With its modular architecture, HardNFTGame is poised for future expansions. Be it new game mechanics, rewards, or interactions, there's always room for more excitement!
+With its modular architecture, HARD is poised for future expansions. Be it new game mechanics, rewards, or interactions, there's always room for more excitement!
 
 ---
 

@@ -31,8 +31,20 @@ contract GritPointsManagement {
         emit GritMinted(msg.sender, gritToMint);
     }
 
-    function burnGrit(uint256 amount) external {
+    function burnGrit(uint256 hardId, uint256 amount) external {
         require(gritPoints[msg.sender] >= amount, "Not enough Grit points to burn");
+
+        // Ensure the burner signed the specific HARD
+        address[] memory signers = signatureManagement.hardSignatures(hardId);
+        bool hasSigned = false;
+        for (uint256 i = 0; i < signers.length; i++) {
+            if (signers[i] == msg.sender) {
+                hasSigned = true;
+                break;
+            }
+        }
+        require(hasSigned, "You haven't signed this HARD");
+
         gritPoints[msg.sender] = gritPoints[msg.sender].sub(amount);
         emit GritBurned(msg.sender, amount);
     }

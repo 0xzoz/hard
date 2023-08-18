@@ -10,15 +10,7 @@ Dive into Hard, a distinctive Ethereum-based game where players engage in a stra
 
 ## Inspiration
 
-HARD draws its ingenious spirit from a melange of brilliant minds and their visionary creations:
-
-- The luminary, **[Balajis](https://farcaster.com/balajis.eth)**, cast a spell with his enlightening discourse on the decentralized future. Dive into his insights [here](https://warpcast.com/balajis.eth/0x7df3ab).
-  
-- A nod to **[Josh Stark](https://farcaster.com/josh.stark)**, whose incisive [article](https://stark.mirror.xyz/n2UpRqwdf7yjuiPKVICPpGoUNeDhlWxGqjulrlpyYi0) paints a vivid picture of the blockchain landscape, inspiring many in the space.
-  
-- And, the audacious game, [Last Degen Standing](https://github.com/defijesus/last-degen-standing), masterminded by **[DefiJesus](https://farcaster.com/defijesus)**, further fueled our imagination. Listen to his captivating [cast](https://warpcast.com/defijesus/0x4523d9) for a deep dive.
-
-These trailblazers not only paved the way but also kindled the fire of innovation, leading to the inception of HARD. To them, we tip our hats in gratitude and admiration.
+HARD's origins can be traced back to a brief window on Farcaster, the social app. Within minutes, a [cast](https://warpcast.com/balajis.eth/0x7df3ab) by **[Balajis](https://farcaster.com/balajis.eth)** surfaced, pointing to the insights of **[Josh Stark](https://farcaster.com/josh.stark)**. Stark's [article](https://stark.mirror.xyz/n2UpRqwdf7yjuiPKVICPpGoUNeDhlWxGqjulrlpyYi0) presented a fresh perspective on 'hardness', adding layers of meaning to the term. Almost concurrently, **[DefiJesus](https://farcaster.com/defijesus)** showcased his audacious [game](https://github.com/defijesus/last-degen-standing) in another [cast](https://warpcast.com/defijesus/0x4523d9). These rapid-fire insights, presented in close succession, laid the foundation for HARD.
 
 
 ### Core Concepts

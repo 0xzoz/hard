@@ -2,7 +2,7 @@
 ---
 
 # Hard
-<img width="639" alt="Screenshot 2023-08-17 at 10 42 42 PM" src="https://github.com/0xzoz/hard/assets/97761083/7d294d6c-dfd1-4829-83c1-1ed285b448d4">
+<img width="100%" alt="Screenshot 2023-08-17 at 10 42 42 PM" src="https://github.com/0xzoz/hard/assets/97761083/7d294d6c-dfd1-4829-83c1-1ed285b448d4">
 
 ### Overview
 

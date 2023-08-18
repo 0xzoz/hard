@@ -1,186 +1,57 @@
-# Foundry Template [![Open in Gitpod][gitpod-badge]][gitpod] [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
 
-[gitpod]: https://gitpod.io/#https://github.com/0xzoz/hard
-[gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod
-[gha]: https://github.com/0xzoz/hard/actions
-[gha-badge]: https://github.com/0xzoz/hard/actions/workflows/ci.yml/badge.svg
-[foundry]: https://getfoundry.sh/
-[foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
-[license]: https://opensource.org/licenses/MIT
-[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
+---
 
-A Foundry-based template for developing Solidity smart contracts, with sensible defaults.
+# Hard
 
-## What's Inside
+### Overview
 
-- [Forge](https://github.com/foundry-rs/foundry/blob/master/forge): compile, test, fuzz, format, and deploy smart
-  contracts
-- [Forge Std](https://github.com/foundry-rs/forge-std): collection of helpful contracts and cheatcodes for testing
-- [PRBTest](https://github.com/PaulRBerg/prb-test): modern collection of testing assertions and logging utilities
-- [Prettier](https://github.com/prettier/prettier): code formatter for non-Solidity files
-- [Solhint Community](https://github.com/solhint-community/solhint-community): linter for Solidity code
+Dive into Hard, a distinctive Ethereum-based game where players engage in a strategic play of collecting and signing NFTs, termed as HARDs. Drawing inspiration from Bitcoin's halving mechanism and the real-world tenacity of "grit," the game combines the thrill of NFT collection with the satisfaction of earning "Grit" points through active participation and strategy.
 
-## Getting Started
+## Inspiration
 
-Click the [`Use this template`](https://github.com/PaulRBerg/foundry-template/generate) button at the top of the page to
-create a new repository with this repo as the initial state.
+HARD draws its ingenious spirit from a melange of brilliant minds and their visionary creations:
 
-Or, if you prefer to install the template manually:
+- The luminary, **[Balajis](https://farcaster.com/balajis.eth)**, cast a spell with his enlightening discourse on the decentralized future. Dive into his insights [here](https://warpcast.com/balajis.eth/0x7df3ab).
+  
+- A nod to **[Josh Stark](https://farcaster.com/josh.stark)**, whose incisive [article](https://stark.mirror.xyz/n2UpRqwdf7yjuiPKVICPpGoUNeDhlWxGqjulrlpyYi0) paints a vivid picture of the blockchain landscape, inspiring many in the space.
+  
+- And, the audacious game, [Last Degen Standing](https://github.com/defijesus/last-degen-standing), masterminded by **[DefiJesus](https://farcaster.com/defijesus)**, further fueled our imagination. Listen to his captivating [cast](https://warpcast.com/defijesus/0x4523d9) for a deep dive.
 
-```sh
-$ mkdir my-project
-$ cd my-project
-$ forge init --template PaulRBerg/foundry-template
-$ pnpm install # install Solhint, Prettier, and other Node.js deps
-```
+These trailblazers not only paved the way but also kindled the fire of innovation, leading to the inception of HardNFTGame. To them, we tip our hats in gratitude and admiration.
 
-If this is your first time with Foundry, check out the
-[installation](https://github.com/foundry-rs/foundry#installation) instructions.
 
-## Features
+### Core Concepts
 
-This template builds upon the frameworks and libraries mentioned above, so for details about their specific features,
-please consult their respective documentation.
+1. **HARD Airdrops**: Active participants on the Ethereum blockchain can look forward to receiving unique HARDs through airdrops. The initial airdrop might distribute, for instance, 50 HARDs. After specific intervals (e.g., every 10 airdrops), this number halves, continuing until it reaches a minimal limit (e.g., 1 HARD).
 
-For example, if you're interested in exploring Foundry in more detail, you should look at the
-[Foundry Book](https://book.getfoundry.sh/). In particular, you may be interested in reading the
-[Writing Tests](https://book.getfoundry.sh/forge/writing-tests.html) tutorial.
+2. **Signature Collection**: Owning a HARD opens the gateway to seek signatures from other HARD holders. Each unique signature not only amplifies the HARD's value but also strengthens the player's position in the game.
 
-### Sensible Defaults
+3. **Grit Points**: Being on the signing end of a HARD fetches you Grit points. These points mirror a player's contribution and engagement in the HardNFTGame ecosystem.
 
-This template comes with a set of sensible default configurations for you to use. These defaults can be found in the
-following files:
+4. **Burn with Precision**: Grit burning introduces a strategic twist. Only players who've signed a specific HARD can burn their Grit points, making every decision in the game consequential.
 
-```text
-├── .editorconfig
-├── .gitignore
-├── .prettierignore
-├── .prettierrc.yml
-├── .solhint.json
-├── foundry.toml
-└── remappings.txt
-```
+### Contracts Breakdown
 
-### VSCode Integration
+1. **HARD Management Contract**: The backbone of the game, this contract manages the minting, airdropping, and overall dynamics of HARDs.
+2. **Signature Management Contract**: This contract is the hub for all signature-related activities, from making signature requests to verifying and storing them.
+3. **Grit Points Management Contract**: Aligning with the game's strategy, this contract oversees the minting and burning of Grit points based on HARD signatures.
 
-This template is IDE agnostic, but for the best user experience, you may want to use it in VSCode alongside Nomic
-Foundation's [Solidity extension](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity).
+### Gameplay Flow
 
-For guidance on how to integrate a Foundry project in VSCode, please refer to this
-[guide](https://book.getfoundry.sh/config/vscode).
+1. **Be Active**: Your activity on the Ethereum blockchain is your ticket to HARD airdrops. The game's halving mechanism ensures that the early birds have an edge, but consistent engagement is key.
+2. **Signature Hunt**: With a HARD in your arsenal, embark on a journey to collect as many unique signatures as possible. Every signature is a testament to your networking prowess.
+3. **Sign & Shine**: By signing other players' HARDs, you not only help them but also earn Grit points for yourself, marking your active contribution.
+4. **Strategic Grit Burning**: The power to burn Grit points is in the hands of those who've signed the corresponding HARD. This selective burning mechanism adds depth to gameplay strategy.
 
-### GitHub Actions
+### The "Grit" Philosophy
 
-This template comes with GitHub Actions pre-configured. Your contracts will be linted and tested on every push and pull
-request made to the `main` branch.
+In HardNFTGame, "Grit" is more than a point system. It symbolizes perseverance, dedication, and the relentless pursuit of long-term goals. Every Grit point you earn is a badge of your resilience and active participation.
 
-You can edit the CI script in [.github/workflows/ci.yml](./.github/workflows/ci.yml).
+### Looking Ahead
 
-## Writing Tests
+With its modular architecture, HardNFTGame is poised for future expansions. Be it new game mechanics, rewards, or interactions, there's always room for more excitement!
 
-To write a new test contract, you start by importing [PRBTest](https://github.com/PaulRBerg/prb-test) and inherit from
-it in your test contract. PRBTest comes with a pre-instantiated [cheatcodes](https://book.getfoundry.sh/cheatcodes/)
-environment accessible via the `vm` property. If you would like to view the logs in the terminal output you can add the
-`-vvv` flag and use [console.log](https://book.getfoundry.sh/faq?highlight=console.log#how-do-i-use-consolelog).
-
-This template comes with an example test contract [Foo.t.sol](./test/Foo.t.sol)
-
-## Usage
-
-This is a list of the most frequently needed commands.
-
-### Build
-
-Build the contracts:
-
-```sh
-$ forge build
-```
-
-### Clean
-
-Delete the build artifacts and cache directories:
-
-```sh
-$ forge clean
-```
-
-### Compile
-
-Compile the contracts:
-
-```sh
-$ forge build
-```
-
-### Coverage
-
-Get a test coverage report:
-
-```sh
-$ forge coverage
-```
-
-### Deploy
-
-Deploy to Anvil:
-
-```sh
-$ forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545
-```
-
-For this script to work, you need to have a `MNEMONIC` environment variable set to a valid
-[BIP39 mnemonic](https://iancoleman.io/bip39/).
-
-For instructions on how to deploy to a testnet or mainnet, check out the
-[Solidity Scripting](https://book.getfoundry.sh/tutorials/solidity-scripting.html) tutorial.
-
-### Format
-
-Format the contracts:
-
-```sh
-$ forge fmt
-```
-
-### Gas Usage
-
-Get a gas report:
-
-```sh
-$ forge test --gas-report
-```
-
-### Lint
-
-Lint the contracts:
-
-```sh
-$ pnpm lint
-```
-
-### Test
-
-Run the tests:
-
-```sh
-$ forge test
-```
-
-## Notes
-
-1. Foundry uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to manage dependencies. For
-   detailed instructions on working with dependencies, please refer to the
-   [guide](https://book.getfoundry.sh/projects/dependencies.html) in the book
-2. You don't have to create a `.env` file, but filling in the environment variables may be useful when debugging and
-   testing against a fork.
-
-## Related Efforts
-
-- [abigger87/femplate](https://github.com/abigger87/femplate)
-- [cleanunicorn/ethereum-smartcontract-template](https://github.com/cleanunicorn/ethereum-smartcontract-template)
-- [foundry-rs/forge-template](https://github.com/foundry-rs/forge-template)
-- [FrankieIsLost/forge-template](https://github.com/FrankieIsLost/forge-template)
+---
 
 ## License
 
